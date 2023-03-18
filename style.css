@@ -24,9 +24,10 @@
      
   }
   .hedd{
-    font-size: 50px;
-    font-family: "sans";
+    font-size: 60px;
+    font-family: auto;
     margin-top: 3px;
+    color: ghostwhite
   }
   
   h1{
@@ -116,14 +117,13 @@
     background-color:rgba(255, 255, 255, 0.50);
     border: none;
     outline: none;
-    color: #582233;
-    font-size: 25px;
+    color: black;
+    font-size: 33px;
     height: 50px;
-    
     border-radius: 5px;
     padding: 0 10px;
     text-align: center;
-  
+    font-family: unset;
   }
   .input-box:focus {
     background-color: rgba(255, 255, 255, 0.50);
