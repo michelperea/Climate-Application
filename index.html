@@ -10,31 +10,50 @@
     <title>Weather App</title>
 </head>
 <body>
+   <!-- Encabezado de la aplicación "Weather App" -->
    <div class="hedd">Weather App</div>
+
+   <!-- Contenedor principal de la aplicación -->
     <div class="app-main">
+        <!-- Contenedor de entrada de texto para ingresar el nombre de la ciudad -->
         <div class="input">
-            <input type="text" id = "input-box" class = "input-box " placeholder="Enter City Name:" autocomplete="off">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter City Name:" autocomplete="off">
         </div>
         
-        <a>
-            ____________________________________
-        </a>
+        <!-- Línea divisoria -->
+        <a>____________________________________</a>
+        
+        <!-- Contenedor para mostrar datos meteorológicos -->
         <div class="weather-body">
+            <!-- Contenedor de la ubicación y fecha -->
             <div class="location">
+                <!-- Elemento para mostrar el nombre de la ciudad -->
                 <div class="city" id="city"><strong>Enter Correct Country/City Name:</strong></div>
+                <!-- Elemento para mostrar la fecha -->
                 <div class="date" id="date"></div>
             </div>
+
+            <!-- Contenedor para mostrar el estado del clima -->
             <div class="weather-status">
+                <!-- Elemento para mostrar la temperatura actual -->
                 <div class="temp" id="temp"></div>
+                <!-- Elemento para mostrar la temperatura mínima y máxima -->
                 <div class="min-max" id="min-max"></div>
+                <!-- Elemento para mostrar la descripción del clima -->
                 <div class="weather" id="weather"></div>
+                <!-- Elemento para mostrar una imagen relacionada con el clima -->
                 <div class="img" id="img"></div>
             </div>
         </div>
+
+        <!-- Gráfico de datos meteorológicos (inicialmente oculto) -->
         <div id="myChart" style="width:100%; height:250px"></div>
     </div>
-    <div class="fot">
-    </div>
+
+    <!-- Pie de página -->
+    <div class="fot"></div>
+
+    <!-- Script JavaScript para la funcionalidad de la aplicación -->
     <script src="script.js"></script>
 </body>
 </html>
