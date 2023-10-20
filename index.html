@@ -1,75 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadatos de la página -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Icono de la pestaña del navegador -->
     <link rel="shortcut icon" href="assets/weather.png" type="image/x-icon">
-
-    <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Script para cargar Google Charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-    <!-- Título de la página -->
     <title>Weather App</title>
 </head>
 <body>
-    <!-- Encabezado de la aplicación Weather App -->
    <div class="hedd">Weather App</div>
-   
-    <!-- Contenedor principal de la aplicación -->
     <div class="app-main">
-        <!-- Campo de entrada para ingresar el nombre de la ciudad -->
         <div class="input">
-            <input type="text" id="input-box" class="input-box" placeholder="Ingresa el nombre de la ciudad:" autocomplete="off">
+            <input type="text" id = "input-box" class = "input-box " placeholder="Enter City Name:" autocomplete="off">
         </div>
         
-        <!-- Línea divisoria -->
         <a>
             ____________________________________
         </a>
-
-        <!-- Contenedor de la información del clima -->
         <div class="weather-body">
-            <!-- Información de la ubicación -->
             <div class="location">
-                <!-- Nombre de la ciudad (se actualizará dinámicamente) -->
-                <div class="city" id="city"><strong>Ingresa un nombre de ciudad/país correcto:</strong></div>
-                
-                <!-- Fecha actual (se actualizará dinámicamente) -->
+                <div class="city" id="city"><strong>Enter Correct Country/City Name:</strong></div>
                 <div class="date" id="date"></div>
             </div>
-
-            <!-- Estado del clima -->
             <div class="weather-status">
-                <!-- Temperatura actual (se actualizará dinámicamente) -->
                 <div class="temp" id="temp"></div>
-
-                <!-- Temperaturas mínima y máxima (se actualizarán dinámicamente) -->
                 <div class="min-max" id="min-max"></div>
-
-                <!-- Descripción del clima (se actualizará dinámicamente) -->
                 <div class="weather" id="weather"></div>
-
-                <!-- Icono representativo del clima (se actualizará dinámicamente) -->
                 <div class="img" id="img"></div>
             </div>
         </div>
-
-        <!-- Gráfico de datos meteorológicos (se generará dinámicamente) -->
         <div id="myChart" style="width:100%; height:250px"></div>
     </div>
-
-    <!-- Pie de página de la aplicación -->
     <div class="fot">
     </div>
-
-    <!-- Enlace al archivo de script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
