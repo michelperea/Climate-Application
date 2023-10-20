@@ -1,46 +1,50 @@
+/* Restablecer los valores de margen, relleno y modelo de caja para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  @font-face {
+}
+
+/* Definir una fuente personalizada llamada "sans" para utilizar en todo el documento */
+@font-face {
     font-family: "sans";
     src: url(font/sans.ttf);
-  }
-  
-  body {
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
     color: black;
     font-family: "sans";
-     height:100vh;
-     overflow:hidden;
-     background-image: url('Clear1.jpg');
-     background-repeat: no-repeat;
-     background-position: top-center;
-     /* font-family: Arial, Helvetica, sans-serif; */
-     background-size: cover;
-     text-align: center;
-    
-     
-  }
-  .hedd{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('Clear1.jpg');
+    background-repeat: no-repeat;
+    background-position: top-center;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Estilos del encabezado "Weather App" */
+.hedd {
     font-size: 60px;
     font-family: 'sans';
     margin-top: 3px;
     color: #ffbf00;
-  }
-  
-  h1{
-      position: absolute;
-      text-align: center;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding-top: 20px;
-      font-family: "sans";
-  }
-  
-  .modal{
+}
+
+/* Estilos para el título "h1" */
+h1 {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    font-family: "sans";
+}
+
+/* Estilos para un modal (por defecto oculto en pantallas más pequeñas) */
+.modal {
     position: absolute;
     text-align: center;
     top: 0;
@@ -48,35 +52,40 @@
     right: 0;
     padding-top: 70px;
     display: none;
-  }
-  
-  .container {
+}
+
+/* Estilos para el contenedor principal */
+.container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-     /* background: #19172e;  */
-  }
-  
-  .weather {
+}
+
+/* Estilos para la sección de datos meteorológicos */
+.weather {
     display: flex;
     flex-direction: row;
     margin: 5px 0;
     font-size: 1.5rem;
     text-align: center;
-  }
-  
-  #location {
+}
+
+/* Estilos para el elemento con ID "location" */
+#location {
     font-size: 3rem;
     font-weight: 800;
-  }
-  .desc {
+}
+
+/* Estilos para la descripción del clima (text-transform: capitalize para hacer mayúscula la primera letra) */
+.desc {
     font-size: 1.25rem;
     text-transform: capitalize;
-  }
-  
-  footer {
+}
+
+/* Estilos para el pie de página */
+footer {
     text-align: center;
     color: black;
     font-size: 1rem;
@@ -86,35 +95,39 @@
     bottom: 0;
     padding: 5px;
     line-height: 3vh;
-  }
-  
-  footer a:visited {
+}
+
+/* Estilos de los enlaces visitados en el pie de página */
+footer a:visited {
     color: inherit;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .modal{
-      display: block;
+}
+
+/* Estilos adicionales para pantallas con un ancho máximo de 768px (modal visible) */
+@media only screen and (max-width: 768px) {
+    .modal {
+        display: block;
     }
-  }
-  
-  .app-main {
+}
+
+/* Estilos para el contenedor principal de la aplicación Weather App */
+.app-main {
     min-width: 50vh;
     width: 50vw;
     margin: 10px auto;
     background-color: rgba(255, 255, 255, 0.50);
     padding: 20px;
     text-align: center;
-  
-  }
-  
-  .app-main {
+}
+
+/* Estilos adicionales para el contenedor principal de la aplicación (margen inferior) */
+.app-main {
     margin-bottom: 20px;
-  
-  }
-  .input-box{
+}
+
+/* Estilos para el campo de entrada de texto */
+.input-box {
     width: 100%;
-    background-color:rgba(255, 255, 255, 0.50);
+    background-color: rgba(255, 255, 255, 0.50);
     border: none;
     outline: none;
     color: black;
@@ -124,74 +137,82 @@
     padding: 0 10px;
     text-align: center;
     font-family: unset;
-  }
-  .input-box:focus {
+}
+
+/* Estilos para el campo de entrada de texto cuando está enfocado */
+.input-box:focus {
     background-color: rgba(255, 255, 255, 0.50);
-  }
-  .weather-body{
+}
+
+/* Estilos para el cuerpo de datos meteorológicos */
+.weather-body {
     display: none;
     color: #582233;
     padding: 10px;
     line-height: 2rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.50);
-    /* height: 40vh; */
     text-align: center;
-    
-  
-    
-  }
-  .location{
+}
+
+/* Estilos para el elemento con la clase "location" (ubicación) */
+.location {
     font-weight: bold;
-  
-  }
-  
-  .weather-status{
+}
+
+/* Estilos para la sección de datos de estado del clima */
+.weather-status {
     padding: 10px;
     align-items: center;
     text-align: center;
-  
-  }
-  .temp{
+}
+
+/* Estilos para la temperatura actual */
+.temp {
     font-size: 50pt;
     font-weight: 700;
     margin: 20px 0;
     text-shadow: 2px 4px rgba(0, 0, 0, 0);
     text-align: center;
-  
-  }
-  .min-max, .weather{
+}
+
+/* Estilos para las temperaturas mínima y máxima, así como la descripción del clima */
+.min-max, .weather {
     font-size: 12pt;
     font-weight: 600;
     text-align: center;
-  }
-  .weather{
+}
+
+/* Estilos adicionales para la sección de descripción del clima */
+.weather {
     font-size: 12pt;
     font-weight: 600;
     justify-content: center;
-  }
-  .heading {
+}
+
+/* Estilos para el título "heading" */
+.heading {
     width: 100%;
     text-align: center;
-    padding-top: 45px;   
+    padding-top: 45px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 200%;
-    font-weight: bold; 
+    font-weight: bold;
     font-style: italic;
     text-align: center;
-  }
-  
-  .fot {
+}
+
+/* Estilos para el pie de página "fot" */
+.fot {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: rgb(255, 255, 255);
     text-align: center;
-    
-    
-  }
-  
-  #myChart{
+}
+
+/* Estilos para el elemento con el ID "myChart" (gráfico de datos meteorológicos, inicialmente oculto) */
+#myChart {
     display: none;
-  }
+}
