@@ -43,14 +43,6 @@ h1 {
     font-family: "sans";
 }
 
- h2 {
-    text-align: center;
-    color: #ffbf00;
-    font-family: sans;
-    font-weight: bold;
-    font-size: 21px;
-}
-
 /* Estilos para un modal (por defecto oculto en pantallas más pequeñas) */
 .modal {
     position: absolute;
